@@ -1,0 +1,106 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --ff: [Inter](https://fonts.google.com/specimen/Inter), san-serif;
+
+  --fs-body: 14px;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-inline: auto;
+  font-style: italic;
+  color: var(--green);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-body);
+  text-align: center;
+  color: var(--white);
+  background: var(--grey-900);
+}
+
+.user-name {
+  font-weight: var(--fw-600);
+  font-weight: var(--fw-600);
+  margin-bottom: 0.5rem;
+}
+
+.user-location {
+  color: var(--green);
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  background-color: var(--grey-700);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.list-item:hover {
+  color: var(--grey-900);
+  background: green;
+}
+
+/* layout style */
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 80dvh;
+}
+
+.profile-container {
+  width: 25em;
+  padding: 1.75rem;
+  border-radius: 0.8rem;
+  background: var(--grey-800);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links * + * {
+  margin-top: 0.75rem;
+}
+
+.user-image {
+  width: 6em;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+}
