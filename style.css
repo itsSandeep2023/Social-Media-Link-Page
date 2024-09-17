@@ -70,6 +70,7 @@ body {
   border-radius: 0.3rem;
   background-color: var(--grey-700);
   transition: background 0.2s ease, color 0.2s ease;
+  cursor: pointer;
 }
 
 .list-item:hover {
@@ -81,7 +82,7 @@ body {
 .wrapper {
   display: grid;
   place-items: center;
-  min-height: 80dvh;
+  min-height: 100svh;
 }
 
 .profile-container {
